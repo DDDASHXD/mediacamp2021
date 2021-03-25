@@ -1,0 +1,259 @@
+@import url("https://fonts.googleapis.com/css2?family=Public+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: 'Lato';
+}
+
+*::-moz-selection {
+  background: #dadada;
+  color: black;
+}
+
+*::selection {
+  background: #dadada;
+  color: black;
+}
+
+html {
+  overflow-x: hidden;
+}
+
+body {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 100%;
+}
+
+html, body {
+  width: 100%;
+  height: auto;
+  margin: 0px;
+  padding: 0px;
+  overflow-x: hidden;
+}
+
+.container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 50%;
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+
+.logo {
+  width: 100%;
+  margin-bottom: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.logo img {
+  width: 50px;
+}
+
+.logo .link {
+  color: #FF001E;
+  margin-left: 20px;
+  cursor: pointer;
+}
+
+.logo .link:hover {
+  text-decoration: underline;
+}
+
+.rubrik {
+  font-size: 60px;
+  line-height: 66px;
+}
+
+.rubrik__hoved {
+  font-weight: 700;
+}
+
+.rubrik__slim {
+  font-weight: 400;
+}
+
+.underrubrik {
+  font-size: 24px;
+  margin-top: 20px;
+}
+
+.mellemrubrik {
+  font-size: 24px;
+  margin-top: 20px;
+  font-weight: 600;
+  margin-top: 70px;
+}
+
+.heroimg {
+  margin: 30px 0;
+  margin-bottom: 50px;
+  background: url(https://cdn.discordapp.com/attachments/619494827431821328/824270961451991080/unknown.png);
+  background-size: cover;
+  background-position: center;
+  width: 115%;
+  height: 30rem;
+  position: relative;
+}
+
+.heroimg .alt {
+  position: absolute;
+  width: 100%;
+  background: white;
+  color: gray;
+  bottom: 0;
+  left: 0;
+  -webkit-transform: translateY(130%);
+          transform: translateY(130%);
+}
+
+.heroimgaltmobile {
+  background: white;
+  color: gray;
+  display: none;
+  margin-bottom: 50px;
+}
+
+.byline {
+  padding-bottom: 5px;
+  border-bottom: 1px solid gray;
+  margin-bottom: 30px;
+  width: 100%;
+}
+
+.byline p .by {
+  color: gray;
+}
+
+.byline p.dato {
+  color: gray;
+}
+
+.manchet, .broedtekst {
+  font-size: 18px;
+  line-height: 26px;
+}
+
+.broedtekst__section {
+  margin: 30px 0;
+}
+
+.quote {
+  border-left: 4px solid #FF001E;
+  background: #f0ecec;
+  padding: 10px;
+  margin-top: 30px;
+  font-size: 18px;
+}
+
+.quote .credit {
+  margin-top: 10px;
+  font-size: 16px;
+  color: gray;
+}
+
+.quote.fact {
+  margin-bottom: 30px;
+  border-left: none;
+  padding: 30px;
+}
+
+.quote.fact .title {
+  font-size: 24px;
+  margin-bottom: 20px;
+  font-weight: 600;
+}
+
+.quote.fact .list {
+  font-size: 18px;
+}
+
+.quote.fact .list__item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 20px 0;
+}
+
+.quote.fact .list__item .dot {
+  background: #FF001E;
+  border-radius: 50%;
+  width: 6px;
+  height: 6px;
+  margin-right: 30px;
+}
+
+@media only screen and (max-width: 1225px) {
+  .container {
+    width: 90%;
+  }
+  .heroimg .alt {
+    -webkit-transform: translate(20px, 130%);
+            transform: translate(20px, 130%);
+  }
+}
+
+@media only screen and (max-width: 653px) {
+  .heroimg {
+    height: 20rem;
+  }
+  .rubrik {
+    font-size: 50px;
+    line-height: normal;
+  }
+}
+
+@media only screen and (max-width: 587px) {
+  .container {
+    width: 98%;
+    margin-top: 10px;
+  }
+  .heroimg {
+    margin-bottom: 0px;
+    height: 15rem;
+  }
+  .heroimg .alt {
+    display: none;
+  }
+  .heroimgaltmobile {
+    display: block;
+  }
+}
+
+@media only screen and (max-width: 508px) {
+  .rubrik {
+    font-size: 40px;
+    margin-bottom: 30px;
+  }
+}
+
+@media only screen and (max-width: 404px) {
+  .rubrik {
+    font-size: 30px;
+  }
+}
+/*# sourceMappingURL=style.css.map */
